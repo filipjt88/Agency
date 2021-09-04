@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Raleway:400,700');
+:root {
+    --pink: #f20f97;
+    --black: #000;
+    --white: #fff;
+    --gray: gray;
+    --lightgray: #f8f8f8;
+    --transition: .4s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+button {
+    background: transparent;
+    border: 1px solid var(--black);
+    width: 300px;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+}
+
+button:hover {
+    background: var(--pink);
+    color: var(--white);
+    border: var(--white);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+/********* HEADER ***********/
+
+header {
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0, .5)),url(img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.active {
+    color: hotpink;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.logo span {
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span:hover {
+    color: var(--pink);
+    transition: var(--transition);
+}
+nav ul li a {
+    color: var(--white);
+    margin-left: 70px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: var(--pink);
+    transition: var(--transition);
+}
+
+header hgroup {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+}
+
+hgroup h4 {
+    font-size: 1.2rem;
+}
+
+hgroup h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 20px 0;
+}
+
+hgroup h5 {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+/********* END OF HEADER ***********/
+
+
+
+/********* ABOUT ***********/
+
+.about {
+    display: flex;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.about img {
+    width: 100%;
+    box-shadow: 0 0 20px var(--gray);
+    border-radius: 30px;
+}
+
+.about .col {
+    flex: 1;
+}
+
+.about .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.about h2 {
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.about h4 {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+.about hr {
+    height: 2px;
+    width: 20%;
+    background: var(--pink);
+    border: none;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+/********* END OF ABOUT ***********/
+
+
+/********* COUNTER ******************/
+
+.counter {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.counter h2 {
+    font-size: 3rem;
+}
+
+.counter hr {
+    border: none;
+    height: 2px;
+    background: var(--pink);
+    margin: 20px auto;
+    width: 60%;
+}
+
+/********* END OF COUNTER ***********/
+
+
+/********* TEAM ******************/
+
+.team {
+    padding: 50px 0;
+}
+
+.team .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team .clean {
+    flex: 5;
+}
+
+.team .full {
+    flex: 7;
+    display: flex;
+}
+
+.team .full img {
+    width: 100%;
+}
+
+.team .full .left .column {
+    flex: 1;
+}
+
+.team .left .full .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.team .left .full .text hr {
+    height: 2px;
+    background: var(--pink);
+    border: none;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    right: -300px;
+}
+
+.team .right .full .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.team .right .full .text hr {
+     height: 2px;
+    background: var(--pink);
+    border: none;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    left: -120px;
+}
+
+
+/********* END OF TEAM ***********/
+
+
+
+/********* SERVICES ******************/
+
+.services {
+    padding: 50px 0;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.services img {
+    width: 100%;
+    box-shadow: 0 0 20px var(--gray);
+    border-radius: 30px;
+}
+
+.col1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 20px;
+}
+
+.col2 {
+    flex: 1;
+}
+
+.col3 {
+   flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+.services h4 {
+    color: var(--pink);
+    font-size: 1.6rem;
+}
+
+/********* END OF SERVICES ***********/
+
+
+
+/********* GALLERY ******************/
+
+.gallery-hgroup {
+    padding: 50px 0;
+}
+
+.gallery-hgroup h2 {
+    font-size: 3rem;
+}
+
+.gallery-hgroup h4 {
+    font-size: 1.3rem;
+}
+
+.gallery-hgroup hr {
+    height: 2px;
+    background: var(--pink);
+    border: none;
+    width: 20%;
+    margin: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery .col {
+    height: 200px;
+    flex: 0 0 23%;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery h4 {
+    background: rgba(242, 15,152,.7);
+    color: var(--white);
+    padding: 20px;
+}
+
+.gallery-bg {
+    background: var(--lightgray);
+    padding: 50px 0;
+}
+
+.gallery .col1 {
+    background-image: url(img/works1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .col2 {
+    background-image: url(img/works2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .col3 {
+    background-image: url(img/works3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .col4 {
+    background-image: url(img/works4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .col5 {
+    background-image: url(img/works5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .col6 {
+    background-image: url(img/works6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .col7 {
+    background-image: url(img/works7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery .col8 {
+    background-image: url(img/works8.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/********* END OF GALLERY ***********/
+
+
+
+/********* CONTACT ******************/
+
+.contact {
+    display: flex;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.contact .col {
+    flex: 1;
+}
+
+.contact img {
+    width: 100%;
+    box-shadow: 0 0 20px var(--gray);
+    border-radius: 30px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+input,textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+     resize: none;
+}
+
+::placeholder {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+   
+}
+/********* END OF CONTACT ***********/
+
+
+
+/********* FOOTER ******************/
+
+footer {
+    background: var(--lightgray);
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer h2 .logo {
+    color: var(--pink);
+}
+
+footer h4 {
+    padding: 10px;
+}
+
+
+/********* END OF FOOTER ***********/
+
+
+
+
+/********* BOTTOM BAR **************/
+
+.bottom-bar {
+    background: var(--lightgray);
+    padding: 50px 0;
+}
+
+.bottom-bar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-bar .icons {
+    display: flex;
+}
+
+.bottom-bar .icons li {
+    list-style: none;
+}
+
+.bottom-bar .icons li a {
+    margin-right: 50px;
+    font-size: 1.3rem;
+    color: var(--pink);
+}
+
+.bottom-bar i {
+    color: var(--pink);
+}
+
+.bottom-bar i:hover {
+    transform: rotate(360deg);
+    transition: var(--transition);
+}
+
+
+/********* END OF BOTTOM BAR ***********/
+
+/******* RESPONSIVE ********************/
+
+@media(max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    nav ul li a {
+        margin-left: 10px;
+    }
+    
+    hgroup h1 {
+        font-size: 2rem;
+    }
+    
+    hgroup h5 {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    
+    .about .text {
+        padding: 6px;
+    }
+    
+    .about .col {
+        flex: 0 0 100%;
+    }
+    
+    .about img {
+        margin-top: 30px;
+    }
+    
+    .counter .col {
+        flex: 0 0 50%;
+    }
+    
+    .team .clean {
+        display: none;
+    }
+    
+    .team .full {
+        flex: 0 0 100%;
+    }
+    
+    .team .row {
+        margin-bottom: 30px;
+    }
+    
+    .team .left .full .text hr {
+        right: -110px;
+    }
+    
+    .team .right .full .text hr {
+        left: -60px;
+    }
+    
+    .services .col1,
+    .services .col2,
+    .services .col3 {
+        flex: 0 0 100%;
+        padding: 20px;
+    }
+    
+    .contact img {
+        margin-top: 20px;
+    }
+    
+    .gallery .col,
+    contact .col {
+        flex: 0 0 100%;
+    }
+    
+    form {
+        padding: 10px;
+    }
+    
+    .bottom-bar .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .bottom-bar .icons li a {
+        margin-right: 20px;
+    }
+    
+    .bottom-bar .icons {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+
+/******* END OF RESPONSIVE ********************/
